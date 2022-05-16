@@ -598,10 +598,26 @@ p {
 
 @media screen and (max-width: 420px) {
   .emily img {
-    height: 37.5rem;
-    width: 23rem;
+    visibility: hidden;
   }
-
+  
+  .martini {
+    height: 5rem;
+    width: 3rem;
+  }
+  
+  .poolfloat {
+    height: 10rem;
+    width: 9rem;
+  }
+  
+  .ticket {
+    height: 4rem;
+    width: 6rem;
+    right: 1%;
+  }
+  
+  
   .bio {
     width: 18.3rem;
   }
@@ -612,5 +628,9 @@ p {
 
   .contactFormContainer {
     max-width: 17.75rem;
+  }
+  
+  .beachball {
+    visibility: hidden;
   }
 }
