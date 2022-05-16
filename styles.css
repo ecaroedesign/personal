@@ -1,0 +1,616 @@
+:root {
+  --fontFamily: 'Fraunces', sans-serf;
+  --backgroundColor: #def8f9;
+  --primaryColor: #fd4072;
+  --secondaryColor: #fdced3;
+  --bottomMargin: 0.5rem;
+  --bottomMargin2: 1rem;
+  --transition: 0.3s;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: var(--backgroundColor);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+
+body {
+  font-family: var(--fontFamily);
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--backgroundColor);
+}
+
+nav h1 {
+  text-align: left;
+}
+
+
+.logo {
+  height: 7rem;
+  width: 7rem;
+}
+
+.btn {
+  height: 3rem;
+  width: 4rem;
+  background-color: transparent;
+  border: none;
+}
+.btn:hover {
+  transition: 0.3s;
+  color: #fdced3;
+}
+
+.btn img {
+  height: 3rem;
+  width: 4rem;
+}
+
+.over {
+  font-family: var(--fontFamily);
+  color: var(--primaryColor);
+}
+
+.over:hover {
+  color: var(--secondaryColor);
+  visibility: visible;
+}
+
+
+/* martini and ticket */
+
+.martini {
+  position: absolute;
+  transform: rotate(20deg);
+  height: 8rem;
+  width: 7rem;
+  right: 10%;
+  top: 35%;
+  width:70px;
+}
+
+.ticket {
+  position: absolute;
+  height: 8rem;
+  width: 10rem;
+  right: 9.6%;
+  top: 70%;
+
+}
+
+
+/* pool floatie*/
+
+
+.poolfloat {
+  position: absolute;
+  transform: rotate(-20deg);
+  height: 12rem;
+  width: 10rem;
+  left: 10%;
+  top: 45%;
+}
+
+/* about me */
+
+.emily {
+background: var(--backgroundColor);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2.5rem;
+max-width: 68rem;
+margin: auto;
+}
+
+.emily img {
+  height: 30rem;
+  width: 27rem;
+}
+
+.bio {
+  width: 25rem;
+  padding: 1rem;
+  border-radius: 12px;
+  color: #fd4072;
+  background-color: #fdced3;
+}
+
+.bio h1 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: var(--bottomMargin);
+}
+
+.bio p {
+  font-family: 'Raleway', sans-serif;
+  padding: 0.5rem 0;
+}
+
+
+/* skills */
+
+.portfolio {
+  background-color: var(--backgroundColor);
+  color: var(--primaryColor);
+  max-width: 68rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.creamshell {
+  position: absolute;
+  transform: rotate(-20deg);
+  height: 9rem;
+  width: 11rem;
+  left: 8%;
+  bottom: -30%;
+}
+
+.pinkshell {
+  position: absolute;
+  height: 8rem;
+  width: 5rem;
+  right: 5%;
+  bottom: -30%;
+}
+
+.sanddollar {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  right: 10%;
+  bottom: -35%;
+}
+
+.starfish {
+  position: absolute;
+  transform: rotate(30deg);
+  height: 6rem;
+  width: 6rem;
+  right: 20%;
+  bottom: -10%;
+
+}
+
+.skills {
+  margin-bottom: 1rem;
+}
+
+.skillsICON {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nextSteps {
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+}
+
+.nextstepsICON {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* design screenshots */
+
+
+.process {
+  background-color: var(--backgroundColor);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.designPic {
+  width: 100%;
+  height: 70%;
+}
+
+.designContainer {
+  display: flex;
+  /* width: 21.8rem;
+  padding: 1rem; */
+  align-items: center;
+  justify-content: center;
+}
+
+.designStep {
+  padding: 0.5rem;
+}
+
+.designProcess {
+  color: var(--primaryColor);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.designStep {
+  text-align: center;
+  width: 21rem;
+  padding: 1rem;
+}
+
+.designStep p {
+  padding: 0.5rem;
+}
+
+.designTitle {
+  margin-bottom: var(--bottomMargin);
+}
+
+.designDetails {
+  margin-bottom: var(--bottomMargin);
+  font-family: 'Raleway', sans-serif;
+  color: #fe7d77
+}
+
+.imageBlock {
+  background-color: var(--secondaryColor);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/*  form  */
+.suncream {
+  position: absolute;
+  transform: rotate(-30deg);
+  height: 8rem;
+  width:5rem;
+  left: 3%;
+}
+
+.twopalms {
+  position: absolute;
+  height: 30rem;
+  width: 20rem;
+  right: 5%;
+}
+
+.popsicle {
+  position: absolute;
+  transform: rotate(10deg);
+  height: 10rem;
+  width: 5rem;
+  left: 19%;
+
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h1, h2, p {
+  text-align: center;
+  margin-bottom: var(--bottomMargin2);
+}
+.contactFormContainer {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 2px;
+}
+
+.contactFormContainer label {
+  line-height: 2.5em;
+  color: var(--primaryColor);
+}
+
+.contactFormContainer textarea {
+  min-height: 6rem;
+  font-size: 14px;
+}
+
+.contactFormContainer .inputField {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  border: 1px outset var(--primaryColor);
+  background-color: #eff9f9;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.inputField::placeholder {
+  font-family: 'Raleway', sans-serif;
+  padding: 0.5rem;
+  color: var(--primaryColor);
+}
+
+.sendButton {
+  font-family: var(--fontFamily), serif;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fd4072;
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.sendButton:hover {
+  background-color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  color: var(--secondaryColor);
+  cursor: pointer;
+}
+
+.socialicons {
+  text-align: center;
+  text-indent: center;
+  margin-bottom: var(--bottomMargin2);
+  flex-direction: row;
+
+}
+
+.socials {
+  align-items: center;
+  align-content: center;
+  width: 3rem;
+  height: 3rem;
+  transition: var(--transition);
+}
+
+#scroll {
+  position:fixed;
+  right:-140px;
+  bottom:10px;
+  width:100px;
+  height:100px;
+  opacity:.7;
+  -webkit-transition:all .4s ease;
+  -moz-transition:all .4s ease;
+  -ms-transition:all .4s ease;
+  -o-transition:all .4s ease;
+  transition:all .4s ease;
+}
+#scroll:hover {
+  opacity:5;
+  cursor:pointer;
+}
+
+
+.resume {
+  background: var(--backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+  }
+
+.dndBtn {
+  font-family: var(--fontFamily);
+  background-color: var(--secondaryColor);
+  border-radius: 12px;
+  border: none;
+  color: var(--primaryColor);
+  text-align: center;
+  font-style: 14px;
+  padding: 10px 5px;
+}
+
+.dndBtn:hover {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+h1, h2, h3 {
+  color: #fd4072;
+}
+
+p {
+  color: #fd4072;
+}
+
+.crabby {
+  position: absolute;
+  height: 5rem;
+  width: 6rem;
+  left: 23%;
+  bottom: auto;
+}
+
+.beachball {
+  position: absolute;
+  height: 6rem;
+  width: 6rem;
+  left: 22%;
+  bottom: 10%;
+}
+
+
+.footer {
+  left: 0;
+  bottom: 0;
+  height: 4rem;
+  width: 100;
+  color: var(--primaryColor);
+  text-align: center;
+}
+
+
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -1px; 
+}
+
+.page-wrap:after {
+  height: 1px;
+  display: block;
+}
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;}
+
+  .emily {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;}
+
+  .emily img {
+    height: 29rem;
+    width: 25rem;}
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;}
+
+  .skillsIcon {
+    height: 5.25rem;
+    width: 5.875rem;}
+
+  .designContainer {
+  flex-direction: column;}
+
+  .designStep {
+  width: 20.875rem;}
+
+  .contact-form-container {
+  max-width: 23.75rem;}
+
+  .btn img {
+  height: 2rem;
+  width:3rem;}
+
+  .btn {
+  justify-content: space-between;
+  padding: 1rem 1rem;}
+
+  .poolfloat {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    left: 5%;}
+
+  .martini {
+    position: absolute;
+    height: 4rem;
+    width: 3rem;
+    right: 8%;}
+
+  .ticket {
+    position: absolute;
+    height: 2rem;
+    width: 3rem;
+    right: 10%;}
+
+  .creamshell {
+    position: absolute;
+    height: 2rem;
+    width: 3rem;
+    position: absolute;
+    left: 10%;}
+
+  .pinkshell {
+    position: absolute;
+    transform: rotate(150deg);
+    height: 4rem;
+    width: 2rem;
+    right: 1%;
+    bottom: 85%; }
+
+  .sanddollar {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    right: 10%;}
+
+  .starfish {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    right: 7%;}
+
+  .crabby {
+    position: fixed;
+    height: 3rem;
+    width: 4rem;
+    left: 10%;}
+
+  .twopalms {
+    position: fixed;
+    height: 8rem;
+    width: 5rem;
+    right: 1%;}
+
+  .suncream {
+    position: fixed;
+    height: 2rem;
+    width:1.5rem;
+    left: 46%;}
+
+  .popsicle {
+    position: fixed;
+    height: 5rem;
+    width:2.5rem;
+    left: 5%;}
+
+  .beachball {
+    position: fixed;
+    height: 4rem;
+    width: 4rem;
+    left: 1%;}
+
+}
+
+
+@media screen and (max-width: 420px) {
+  .emily img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .designStep {
+    width: 17.875rem;
+  }
+
+  .contactFormContainer {
+    max-width: 17.75rem;
+  }
+}
