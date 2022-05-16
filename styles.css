@@ -2,7 +2,7 @@
   --fontFamily: 'Fraunces', sans-serf;
   --backgroundColor: #def8f9;
   --primaryColor: #fd4072;
-  --secondaryColor: #fdced3;
+  --secondaryColor: #ffe9ed;
   --bottomMargin: 0.5rem;
   --bottomMargin2: 1rem;
   --transition: 0.3s;
@@ -140,8 +140,8 @@ margin: auto;
   width: 25rem;
   padding: 1rem;
   border-radius: 12px;
-  color: #fd4072;
-  background-color: #fdced3;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
 }
 
 .bio h1 {
@@ -477,8 +477,7 @@ p {
 
 
 
-
-
+  
 
 @media screen and (max-width: 720px) {
   nav {
