@@ -353,7 +353,7 @@ margin: auto;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  color: #fd4072;
+  color: var(--primaryColor);
   background-color: var(--secondaryColor);
   border: 1px solid var(--secondaryColor);
   border-radius: 12px;
